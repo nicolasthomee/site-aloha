@@ -1,0 +1,41 @@
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1.1rem;
+  text-align: center;
+  width: 100%;
+  position: static;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+#facebook:hover {
+  color: #002fff;
+}
+
+#instagram:hover {
+  color: #e100ff;
+}
+
+#whatsapp:hover {
+  color: #28c900;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+}

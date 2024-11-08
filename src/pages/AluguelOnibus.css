@@ -1,0 +1,98 @@
+.aluguel-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas grandes */
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aluguel-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #6c00ff;
+  padding: 1rem;
+  text-align: center;
+  height: auto; /* Altura ajustável */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Garante que todo o texto apareça */
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.aluguel-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 3rem auto 1rem auto;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-dates {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #6c00ff;
+  color: white;
+}
+
+button:hover {
+  background-color: #4900b8;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* 1 coluna em dispositivos móveis */
+  }
+
+  .aluguel-card {
+    height: auto;
+  }
+
+  .form-buttons button {
+    width: 45%;
+  }
+}

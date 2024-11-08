@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/aloha-turismo/static/css/main.24b6ad16.css",
+    "main.js": "/aloha-turismo/static/js/main.6a6f9f09.js",
+    "static/js/453.e7e89046.chunk.js": "/aloha-turismo/static/js/453.e7e89046.chunk.js",
+    "static/media/img3-aloha.png": "/aloha-turismo/static/media/img3-aloha.7b636bdb0282864f901b.png",
+    "static/media/img2-aloha.png": "/aloha-turismo/static/media/img2-aloha.9eeaee09bf534cdea562.png",
+    "static/media/img1-aloha.png": "/aloha-turismo/static/media/img1-aloha.14c9dd7781d74cc22236.png",
+    "static/media/laranja-2611.png": "/aloha-turismo/static/media/laranja-2611.b9aec379e194f91a6dcb.png",
+    "static/media/azul-2019.png": "/aloha-turismo/static/media/azul-2019.acda3a390fba78ee821b.png",
+    "static/media/gramado.jpg": "/aloha-turismo/static/media/gramado.f6df6b4e5b6a09e0d687.jpg",
+    "static/media/cinza-1203.png": "/aloha-turismo/static/media/cinza-1203.f0c5e871e32d02682121.png",
+    "static/media/verde-1506.png": "/aloha-turismo/static/media/verde-1506.2563f14af225f2035275.png",
+    "static/media/g8-2018.png": "/aloha-turismo/static/media/g8-2018.fcf28b55ac2400e93bda.png",
+    "static/media/beto-carrero.jpg": "/aloha-turismo/static/media/beto-carrero.89665d54c26243fad9ff.jpg",
+    "static/media/rio-de-janeiro.jpg": "/aloha-turismo/static/media/rio-de-janeiro.169db661730989eeb419.jpg",
+    "static/media/aparecida.jpg": "/aloha-turismo/static/media/aparecida.ee94b69da74b96776209.jpg",
+    "static/media/turismo.png": "/aloha-turismo/static/media/turismo.991cbb0f94800a1d76ef.png",
+    "static/media/frete.png": "/aloha-turismo/static/media/frete.728cb2b46168b19298d7.png",
+    "static/media/frota.png": "/aloha-turismo/static/media/frota.3ae8c17f0bfc882650a4.png",
+    "static/media/logo.png": "/aloha-turismo/static/media/logo.f81608af2ea16f19ef8a.png",
+    "index.html": "/aloha-turismo/index.html",
+    "main.24b6ad16.css.map": "/aloha-turismo/static/css/main.24b6ad16.css.map",
+    "main.6a6f9f09.js.map": "/aloha-turismo/static/js/main.6a6f9f09.js.map",
+    "453.e7e89046.chunk.js.map": "/aloha-turismo/static/js/453.e7e89046.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24b6ad16.css",
+    "static/js/main.6a6f9f09.js"
+  ]
+}

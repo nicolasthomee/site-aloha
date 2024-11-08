@@ -1,0 +1,109 @@
+.nossa-frota {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.frota-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.frota-item {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 80%;
+  max-width: 900px;
+  align-items: center;
+  position: relative;
+  height: 250px; /* Definindo uma altura fixa para cada item */
+}
+
+.frota-image {
+  width: 40%; /* Ajustando largura para a imagem */
+  height: 100%; /* Imagem ocupa toda a altura do item */
+  object-fit: cover;
+}
+
+.frota-info {
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.frota-info h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.frota-info p {
+  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-veja-mais {
+  background-color: #5b00e4;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.btn-veja-mais:hover {
+  background-color: #330180;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .frota-item {
+    flex-direction: column; /* Layout em coluna */
+    align-items: center;
+    height: auto; /* Altura automática para ajustes em telas menores */
+  }
+
+  .frota-image {
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: auto; /* Altura automática em telas menores */
+    position: relative;
+  }
+
+  .frota-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .frota-info h2 {
+    font-size: 1.25rem; /* Reduz o tamanho do título */
+  }
+
+  .frota-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}

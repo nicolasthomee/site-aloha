@@ -1,0 +1,47 @@
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Define a altura do carrossel para telas maiores */
+.carousel {
+  height: 400px; /* Altura padrão */
+}
+
+/* Reduz a altura do carrossel para telas médias */
+@media (max-width: 1024px) {
+  .carousel {
+    height: 300px;
+  }
+}
+
+/* Reduz a altura para telas pequenas */
+@media (max-width: 768px) {
+  .carousel {
+    height: 200px;
+  }
+}
+
+/* Altura ainda menor para telas muito pequenas */
+@media (max-width: 480px) {
+  .carousel {
+    height: 150px;
+  }
+}
