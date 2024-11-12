@@ -7,7 +7,6 @@ import './AluguelOnibus.css';
 const AluguelOnibus = () => {
   const navigate = useNavigate();
 
-  // Inicialização dos estados
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -16,7 +15,7 @@ const AluguelOnibus = () => {
     dataIda: '',
     dataRetorno: ''
   });
-  const [showMessage, setShowMessage] = useState(false); // Estado para exibir a mensagem
+  const [showMessage, setShowMessage] = useState(false); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,10 +29,8 @@ const AluguelOnibus = () => {
     e.preventDefault();
     console.log('Dados do Formulário:', formData);
 
-    // Exibir mensagem de confirmação após envio
     setShowMessage(true);
 
-    // Limpar os campos do formulário
     setFormData({
       nome: '',
       email: '',
@@ -43,7 +40,6 @@ const AluguelOnibus = () => {
       dataRetorno: ''
     });
 
-    // Ocultar mensagem após 5 segundos (opcional)
     setTimeout(() => {
       setShowMessage(false);
     }, 5000);

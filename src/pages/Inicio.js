@@ -1,17 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Carousel from '../components/Carousel'; // Certifique-se de que o caminho está correto
+import Carousel from '../components/Carousel'; 
 import './Inicio.css';
 
 function Inicio() {
   return (
     <div className="inicio-page">
-      {/* Carrossel */}
       <div className="carousel-container">
         <Carousel />
       </div>
 
-      {/* Seções individuais */}
       <div className="sections-container">
         <div className="section-box">
           <Link to="/aluguel-onibus" className="section-link">

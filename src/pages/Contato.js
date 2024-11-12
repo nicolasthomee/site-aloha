@@ -9,7 +9,6 @@ const Contato = () => {
     <div className="contato-page">
       <h2 className="contato-title">Entre em contato conosco</h2>
 
-      {/* Informações de contato */}
       <div className="contato-links">
         <Link to="https://wa.me/99999999999" target="_blank" className="contato-link">
           <FaWhatsapp className="contato-icon" id='whatsapp'/>
@@ -29,7 +28,6 @@ const Contato = () => {
         </div>
       </div>
 
-      {/* Adicionando o mapa */}
       <OpenStreetMap />
     </div>
   );

@@ -28,12 +28,12 @@ h1 {
   max-width: 900px;
   align-items: center;
   position: relative;
-  height: 250px; /* Definindo uma altura fixa para cada item */
+  height: 250px; 
 }
 
 .frota-image {
-  width: 40%; /* Ajustando largura para a imagem */
-  height: 100%; /* Imagem ocupa toda a altura do item */
+  width: 40%;
+  height: 100%; 
   object-fit: cover;
 }
 
@@ -74,36 +74,36 @@ h1 {
   background-color: #330180;
 }
 
-/* Responsividade para telas menores */
+/* Responsividade */
 @media (max-width: 768px) {
   .frota-item {
-    flex-direction: column; /* Layout em coluna */
+    flex-direction: column;
     align-items: center;
-    height: auto; /* Altura ajustável */
+    height: auto; 
   }
 
   .frota-image {
-    width: 100%; /* Imagem ocupa toda a largura */
-    height: auto; /* Altura proporcional */
-    object-fit: cover; /* Evita distorções na imagem */
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
   }
 
   .frota-info h2, 
   .frota-info p {  
-    display: none; /* Remove o texto */
+    display: none;
   }
 
   .frota-info {
-    background-color: transparent; /* Remove o fundo */
-    position: static; /* Redefine o posicionamento */
-    width: 100%; /* Garante largura total */
-    padding: 0; /* Remove o padding */
+    background-color: transparent; 
+    position: static; 
+    width: 100%; 
+    padding: 0; 
     text-align: center;
   }
 
   .btn-veja-mais {
-    display: inline-block; /* Evita largura total */
-    background-color: #5b00e4; /* Mantém cor do botão */
+    display: inline-block; 
+    background-color: #5b00e4; 
     color: white;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -113,6 +113,6 @@ h1 {
   }
 
   .btn-veja-mais:hover {
-    background-color: #330180; /* Cor ao passar o mouse */
+    background-color: #330180; 
   }
 }

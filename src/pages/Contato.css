@@ -19,15 +19,15 @@
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
-  max-width: 400px; /* Limitar a largura máxima para melhor apresentação */
-  text-align: center; /* Centraliza o texto */
+  max-width: 400px;
+  text-align: center; 
 }
 
 .contato-link {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  color: #333; /* Cor padrão dos links */
+  color: #333; 
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -35,7 +35,7 @@
 .contato-icon {
   margin-right: 0.5rem;
   font-size: 1.5rem;
-  color: #0066cc; /* Cor padrão dos ícones */
+  color: #0066cc; 
   transition: color 0.3s ease;
 }
 

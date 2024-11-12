@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Importar useNavigate
+import { useNavigate } from 'react-router-dom';
 import './Turismo.css';
 
 const destinos = [
@@ -30,7 +30,7 @@ const destinos = [
 ];
 
 const Turismo = () => {
-  const navigate = useNavigate(); // Definir a função navigate
+  const navigate = useNavigate(); 
 
   return (
     <div className="turismo-page">
@@ -43,7 +43,7 @@ const Turismo = () => {
               <h3>{destino.nome}</h3>
               <p>Ida: {destino.ida}</p>
               <p>Retorno: {destino.retorno}</p>
-              <button onClick={() => navigate('/contato')} className="btn-contato">Entre em Contato</button> {/* Usar o navigate correto */}
+              <button onClick={() => navigate('/contato')} className="btn-contato">Entre em Contato</button>
             </div>
           </div>
         ))}

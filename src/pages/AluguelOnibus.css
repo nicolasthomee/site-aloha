@@ -5,7 +5,7 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas grandes */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -18,10 +18,10 @@
   color: #6c00ff;
   padding: 1rem;
   text-align: center;
-  height: auto; /* Altura ajustável */
+  height: auto; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Garante que todo o texto apareça */
+  justify-content: flex-start; 
 }
 
 p {
@@ -85,14 +85,14 @@ button:hover {
 .success-message {
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: #28a745; /* Verde para sucesso */
+  color: #28a745; 
   font-weight: bold;
 }
 
 /* Responsividade */
 @media (max-width: 600px) {
   .card-grid {
-    grid-template-columns: 1fr; /* 1 coluna em dispositivos móveis */
+    grid-template-columns: 1fr;
   }
 
   .aluguel-card {
