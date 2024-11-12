@@ -79,31 +79,40 @@ h1 {
   .frota-item {
     flex-direction: column; /* Layout em coluna */
     align-items: center;
-    height: auto; /* Altura automática para ajustes em telas menores */
+    height: auto; /* Altura ajustável */
   }
 
   .frota-image {
     width: 100%; /* Imagem ocupa toda a largura */
-    height: auto; /* Altura automática em telas menores */
-    position: relative;
+    height: auto; /* Altura proporcional */
+    object-fit: cover; /* Evita distorções na imagem */
+  }
+
+  .frota-info h2, 
+  .frota-info p {  
+    display: none; /* Remove o texto */
   }
 
   .frota-info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente */
-    color: white;
-    padding: 1rem;
+    background-color: transparent; /* Remove o fundo */
+    position: static; /* Redefine o posicionamento */
+    width: 100%; /* Garante largura total */
+    padding: 0; /* Remove o padding */
     text-align: center;
   }
 
-  .frota-info h2 {
-    font-size: 1.25rem; /* Reduz o tamanho do título */
+  .btn-veja-mais {
+    display: inline-block; /* Evita largura total */
+    background-color: #5b00e4; /* Mantém cor do botão */
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
   }
 
-  .frota-info p {
-    font-size: 0.9rem;
-    line-height: 1.4;
+  .btn-veja-mais:hover {
+    background-color: #330180; /* Cor ao passar o mouse */
   }
 }

@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBus } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import useForm from '../hooks/useForm'; // Importação do hook
 import './AluguelOnibus.css';
 
 const AluguelOnibus = () => {
   const navigate = useNavigate();
 
-  // Inicialização do hook useForm
-  const { values, handleChange, handleSubmit } = useForm({
+  // Inicialização dos estados
+  const [formData, setFormData] = useState({
     nome: '',
     email: '',
     telefone: '',
@@ -17,10 +16,37 @@ const AluguelOnibus = () => {
     dataIda: '',
     dataRetorno: ''
   });
+  const [showMessage, setShowMessage] = useState(false); // Estado para exibir a mensagem
 
-  const onSubmit = (formData) => {
-    console.log('Formulário enviado:', formData);
-    // Lógica de envio
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Dados do Formulário:', formData);
+
+    // Exibir mensagem de confirmação após envio
+    setShowMessage(true);
+
+    // Limpar os campos do formulário
+    setFormData({
+      nome: '',
+      email: '',
+      telefone: '',
+      destino: '',
+      dataIda: '',
+      dataRetorno: ''
+    });
+
+    // Ocultar mensagem após 5 segundos (opcional)
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 5000);
   };
 
   const cards = [
@@ -34,26 +60,25 @@ const AluguelOnibus = () => {
 
   return (
     <div className="aluguel-container">
-      <h1>Frete de Ônibus</h1> {/* Título da página */}
-      
+      <h1>Frete de Ônibus</h1>
+
       <div className="card-grid">
         {cards.map((card, index) => (
           <div className="aluguel-card" key={index}>
             <FontAwesomeIcon icon={faBus} className="aluguel-icon" />
-            <p>{card.text}</p> {/* Exibição completa do texto */}
+            <p>{card.text}</p>
           </div>
         ))}
       </div>
 
-      {/* Formulário abaixo */}
       <div className="form-container">
         <h2>Preencha os dados e solicite um orçamento</h2>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit}>
           <input
             type="text"
             name="nome"
             placeholder="Nome"
-            value={values.nome}
+            value={formData.nome}
             onChange={handleChange}
             required
           />
@@ -61,7 +86,7 @@ const AluguelOnibus = () => {
             type="email"
             name="email"
             placeholder="E-mail"
-            value={values.email}
+            value={formData.email}
             onChange={handleChange}
             required
           />
@@ -69,7 +94,7 @@ const AluguelOnibus = () => {
             type="text"
             name="telefone"
             placeholder="Telefone / WhatsApp"
-            value={values.telefone}
+            value={formData.telefone}
             onChange={handleChange}
             required
           />
@@ -77,7 +102,7 @@ const AluguelOnibus = () => {
             type="text"
             name="destino"
             placeholder="Destino"
-            value={values.destino}
+            value={formData.destino}
             onChange={handleChange}
             required
           />
@@ -85,14 +110,14 @@ const AluguelOnibus = () => {
             <input
               type="date"
               name="dataIda"
-              value={values.dataIda}
+              value={formData.dataIda}
               onChange={handleChange}
               required
             />
             <input
               type="date"
               name="dataRetorno"
-              value={values.dataRetorno}
+              value={formData.dataRetorno}
               onChange={handleChange}
             />
           </div>
@@ -109,6 +134,9 @@ const AluguelOnibus = () => {
             </button>
           </div>
         </form>
+
+        {/* Exibir mensagem de confirmação */}
+        {showMessage && <p className="success-message">Orçamento Solicitado!</p>}
       </div>
     </div>
   );
