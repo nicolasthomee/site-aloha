@@ -7,13 +7,13 @@ import Turismo from './pages/Turismo';
 import NossaFrota from './pages/NossaFrota';
 import Contato from './pages/Contato';
 import Footer from './components/Footer';
-import './App.css'; // Importando o CSS global do App
+import './App.css'; 
 
 function App() {
     return (
         <Router>
             <Header />
-            <div className="content"> {/* Wrapper para manter o conteúdo centralizado */}
+            <div className="content">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/aluguel-onibus" element={<AluguelOnibus />} />
