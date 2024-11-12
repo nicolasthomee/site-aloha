@@ -3,7 +3,6 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-// Para exibir o ícone do marcador corretamente
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
@@ -12,13 +11,13 @@ L.Icon.Default.mergeOptions({
 });
 
 const OpenStreetMap = () => {
-  const position = [-25.359376907348633, -51.476539611816406]; // Coordenadas para o local desejado
+  const position = [-25.359376907348633, -51.476539611816406]; 
 
   return (
     <MapContainer 
       center={position} 
       zoom={14} 
-      style={{ height: '300px', width: '100%', maxWidth: '600px', margin: '40px auto 0 auto' }} // Ajustes de estilo
+      style={{ height: '300px', width: '100%', maxWidth: '600px', margin: '40px auto 0 auto' }} 
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

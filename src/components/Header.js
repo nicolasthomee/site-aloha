@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Importar ícones
+import { FaBars, FaTimes } from 'react-icons/fa'; 
 import './Header.css';
 
 function Header() {

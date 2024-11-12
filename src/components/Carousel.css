@@ -20,26 +20,23 @@
   border-radius: 8px;
 }
 
-/* Define a altura do carrossel para telas maiores */
+
 .carousel {
-  height: 400px; /* Altura padrão */
+  height: 400px;
 }
 
-/* Reduz a altura do carrossel para telas médias */
 @media (max-width: 1024px) {
   .carousel {
     height: 300px;
   }
 }
 
-/* Reduz a altura para telas pequenas */
 @media (max-width: 768px) {
   .carousel {
     height: 200px;
   }
 }
 
-/* Altura ainda menor para telas muito pequenas */
 @media (max-width: 480px) {
   .carousel {
     height: 150px;

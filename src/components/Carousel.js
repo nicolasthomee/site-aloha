@@ -12,9 +12,9 @@ function Carousel() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000); // Troca a imagem a cada 5 segundos
+        }, 5000);
 
-        return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
+        return () => clearInterval(interval); 
     }, []);
 
     return (
